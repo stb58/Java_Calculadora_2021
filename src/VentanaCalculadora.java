@@ -25,7 +25,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        display = new javax.swing.JLabel();
+        pantalla = new javax.swing.JLabel();
         boton07 = new javax.swing.JButton();
         boton08 = new javax.swing.JButton();
         boton09 = new javax.swing.JButton();
@@ -40,12 +40,12 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
 
-        display.setBackground(new java.awt.Color(0, 0, 0));
-        display.setFont(new java.awt.Font("Consolas", 0, 36)); // NOI18N
-        display.setForeground(new java.awt.Color(0, 255, 0));
-        display.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        display.setText("0");
-        display.setOpaque(true);
+        pantalla.setBackground(new java.awt.Color(0, 0, 0));
+        pantalla.setFont(new java.awt.Font("Consolas", 0, 36)); // NOI18N
+        pantalla.setForeground(new java.awt.Color(0, 255, 0));
+        pantalla.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        pantalla.setText("0");
+        pantalla.setOpaque(true);
 
         boton07.setText("7");
         boton07.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +124,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(display, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
+                    .addComponent(pantalla, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
@@ -156,7 +156,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(display, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(boton07, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -181,43 +181,93 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void boton07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton07ActionPerformed
-       display.setText("7");
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("7");
+        } else {
+            pantalla.setText(auxiliar + "7");
+        }
     }//GEN-LAST:event_boton07ActionPerformed
 
     private void boton08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton08ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("8");
+        } else {
+            pantalla.setText(auxiliar + "8");
+        }
     }//GEN-LAST:event_boton08ActionPerformed
 
     private void boton09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton09ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("9");
+        } else {
+            pantalla.setText(auxiliar + "9");
+        }
     }//GEN-LAST:event_boton09ActionPerformed
 
     private void boton04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton04ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("4");
+        } else {
+            pantalla.setText(auxiliar + "4");
+        }
     }//GEN-LAST:event_boton04ActionPerformed
 
     private void boton05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton05ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("5");
+        } else {
+            pantalla.setText(auxiliar + "5");
+        }
     }//GEN-LAST:event_boton05ActionPerformed
 
     private void boton06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton06ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("6");
+        } else {
+            pantalla.setText(auxiliar + "6");
+        }
     }//GEN-LAST:event_boton06ActionPerformed
 
     private void boton01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton01ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("1");
+        } else {
+            pantalla.setText(auxiliar + "1");
+        }
     }//GEN-LAST:event_boton01ActionPerformed
 
     private void boton02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton02ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("2")) {
+            pantalla.setText("7");
+        } else {
+            pantalla.setText(auxiliar + "2");
+        }
     }//GEN-LAST:event_boton02ActionPerformed
 
     private void boton03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton03ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("3");
+        } else {
+            pantalla.setText(auxiliar + "3");
+        }
     }//GEN-LAST:event_boton03ActionPerformed
 
     private void boton00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton00ActionPerformed
-        // TODO add your handling code here:
+        String auxiliar = pantalla.getText();
+        if (auxiliar.equals("0")) {
+            pantalla.setText("0");
+        } else {
+            pantalla.setText(auxiliar + "0");
+        }
     }//GEN-LAST:event_boton00ActionPerformed
 
     /**
@@ -266,6 +316,6 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private javax.swing.JButton boton07;
     private javax.swing.JButton boton08;
     private javax.swing.JButton boton09;
-    private javax.swing.JLabel display;
+    private javax.swing.JLabel pantalla;
     // End of variables declaration//GEN-END:variables
 }

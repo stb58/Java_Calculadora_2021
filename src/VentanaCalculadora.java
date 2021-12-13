@@ -452,26 +452,33 @@ public class VentanaCalculadora extends javax.swing.JFrame {
 
     private void botonUnoPartidodeXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonUnoPartidodeXActionPerformed
        operando1 = Double.valueOf(pantalla.getText());
+       //Hago la operación para que se muestre en la pantalla 1/X (siendo x el numero introducido)
        pantalla.setText("" + 1/operando1);
     }//GEN-LAST:event_botonUnoPartidodeXActionPerformed
 
     private void botonXelevadoadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonXelevadoadosActionPerformed
        operando1 = Double.valueOf(pantalla.getText());
+        //Hago la operación para que se muestre en la pantalla un numero multiplicado por el mismo
        pantalla.setText("" + operando1*operando1);
     }//GEN-LAST:event_botonXelevadoadosActionPerformed
 
     private void botonPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPorcentajeActionPerformed
        operando1 = Double.valueOf(pantalla.getText());
+        //Hago la operación para que se muestre en la pantalla un numero dividido entre 100
        pantalla.setText("" + operando1/100);
     }//GEN-LAST:event_botonPorcentajeActionPerformed
 
     private void botonRaizCuadradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRaizCuadradaActionPerformed
        operando1 = Double.valueOf(pantalla.getText());
+        //Hago la operación para que se muestre en la pantalla la raiz cuadrada de un número
        pantalla.setText("" + Math.sqrt(operando1));
     }//GEN-LAST:event_botonRaizCuadradaActionPerformed
 
     private void botonDecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonDecimalActionPerformed
        operando1 = Double.valueOf(pantalla.getText());
+       //Hago una nueva int en la cual se va a guardar el numero introducido previamente, y la calculadora colocará despues un punto
+       //para que introduzcamos los decimales. Como luego al hacer una operación nos va a leer el numero introducido en pantalla
+       //se guardan también los decimales en operando 1.
        int operando3 = (int) operando1;
        pantalla.setText(operando3 + ".");
     }//GEN-LAST:event_botonDecimalActionPerformed

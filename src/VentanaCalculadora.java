@@ -255,7 +255,7 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                             .addComponent(botonDivision, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(botonSuma, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(botonResta, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(175, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -408,21 +408,21 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         double operando2 = Double.valueOf(pantalla.getText());
         if (operacion.equals("+")){
             operando1 = operando1 + operando2;
-            
+            pantalla.setText("" + operando1);
         }
         if (operacion.equals("-")){
             operando1 = operando1 - operando2;
-            
+            pantalla.setText("" + operando1);
         }
         if (operacion.equals("/")){
             operando1 = operando1 / operando2;
-            
+            pantalla.setText("" + operando1);
         }
         if (operacion.equals("*")){
             operando1 = operando1 * operando2;
-            
+            pantalla.setText("" + operando1);
         }
-        pantalla.setText("" + operando1);
+        
         
     }//GEN-LAST:event_botonIgualActionPerformed
 
